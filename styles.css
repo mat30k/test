@@ -86,54 +86,95 @@ a {
 
 /* Navigation */
 nav {
-    font-family: var(--mono);
-    font-size: 80%;
-    padding: 1rem;
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
 }
 
 nav h1 a {
-    font-family: var(--sans);
+  font-family: var(--sans);
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 nav li:first-child {
-    flex-basis: 100%;
-    text-align: center;
+  flex-basis: 100%;
+  text-align: center;
 }
 
-nav [class*="fa-"]{
-    font-size: 150%;
-    color: var(--palecer);
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--palecer);
 }
 
-nav h1 [class*="fa-"]{
-    font-size: 100%;
-    color: var(--palecer);
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--palecer);
 }
 
-nav [class*="fa-"]:hover{
-    color: var(--burntsie);
+nav [class*="fa-"]:hover {
+  color: var(--burntsie);
 }
 
-nav h1 [class*="fa-"]:hover{
-    color: var(--burntsie);
+nav h1 [class*="fa-"]:hover {
+  color: var(--burntsie);
 }
 nav a {
-    color: var(--white);
-    text-decoration: none;
-    display: block;
+  color: var(--white);
+  text-decoration: none;
+  display: block;
 }
 
 nav a:hover {
-    color: var(--burntsie);
+  color: var(--burntsie);
+}
+
+.button {
+  background-color: var(--burntsie);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--palecer);
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem; 
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+}
+
+/* Media queries */
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
 }
