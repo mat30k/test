@@ -111,6 +111,23 @@ nav li:first-child {
     text-align: center;
 }
 
+nav [class*="fa-"]{
+    font-size: 150%;
+    color: var(--palecer);
+}
+
+nav h1 [class*="fa-"]{
+    font-size: 100%;
+    color: var(--palecer);
+}
+
+nav [class*="fa-"]:hover{
+    color: var(--burntsie);
+}
+
+nav h1 [class*="fa-"]:hover{
+    color: var(--burntsie);
+}
 nav a {
     color: var(--white);
     text-decoration: none;
