@@ -1,0 +1,83 @@
+:root {
+    /* Palette colours */
+    --metblue: #3D5A80;
+    --palecer: #98C1D9;
+    --lightcy: #E0FBFC;
+    --burntsie: #EE6C4D;
+    --gunmetal: #293241;
+    /* Palette colours end */
+    /* Other colours */
+    --black: #171321;
+    --white: #f7f8fa;
+    /* Other colours end */
+    --font-size: 1.3rem;
+    --mono: "Roboto mono", monospace;
+    --sans: Roboto, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: var(--sans);
+    background-color: var(--gunmetal);
+    color: var(--white);
+    font-size: var(--font-size)
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--burntsie);
+}
+
+a:hover {
+    color: var(--palecer);
+    text-decoration: none;
+}
+
+/* Intro styles */
+
+#intro {
+    padding-bottom: 10rem;
+}
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+#intro span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--lightcy);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+}
+
+#contact {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 3rem 0;
+}
+
+#contact p:last-child {
+    margin-top: 3rem;
+}
