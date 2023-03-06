@@ -52,11 +52,14 @@ a {
 /* Intro styles */
 
 #intro {
-  padding-bottom: 10rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #intro p {
   font-size: 1rem;
   line-height: 1.5;
+  font-family: var(--mono);
 }
 
 #intro .name {
@@ -73,12 +76,21 @@ a {
   font-size: 4rem;
 }
 
+.section-burn {
+  background-color: var(--metblue);
+}
+
 #contact {
   width: 400px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
 }
+
+#contact p {
+  font-family: var(--mono);
+}
+
 
 #contact p:last-child {
   margin-top: 3rem;
@@ -142,6 +154,8 @@ nav a:hover {
   background-color: var(--burntsie);
   padding: 0.5rem;
   border-radius: 6px;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .button:hover {
@@ -151,6 +165,7 @@ nav a:hover {
 
 footer {
     text-align: center;
+    padding: 4rem 0;
 }
 
 footer ul {
